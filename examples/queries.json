@@ -1,0 +1,8 @@
+[
+  {"query":"idempotency key retries payment transaction","relevant_sources":["replay.md"]},
+  {"query":"columns types nullability uniqueness","relevant_sources":["contracts.md"]},
+  {"query":"late arrivals prediction timestamp leakage","relevant_sources":["features.md"]},
+  {"query":"recall reciprocal rank retrieved chunks","relevant_sources":["retrieval.md"]},
+  {"query":"freshness future timestamps","relevant_sources":["contracts.md"]},
+  {"query":"volcano magma eruption","relevant_sources":[]}
+]

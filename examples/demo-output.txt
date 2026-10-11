@@ -1,0 +1,158 @@
+{
+  "comparison": [
+    {
+      "method": "overlap",
+      "k": 2,
+      "corpus_sha256": "c967a0cb63e8fef57b1ddc6845ad574d366e4cacbb28d89cc650b1eaf36613cb",
+      "case_count": 6,
+      "answerable_count": 5,
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "unanswerable_abstention_rate": 1.0,
+      "cases": [
+        {
+          "query": "idempotency key retries payment transaction",
+          "answerable": true,
+          "sources": [
+            "replay.md",
+            "replay.md"
+          ],
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "abstention_correct": null
+        },
+        {
+          "query": "columns types nullability uniqueness",
+          "answerable": true,
+          "sources": [
+            "contracts.md"
+          ],
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "abstention_correct": null
+        },
+        {
+          "query": "late arrivals prediction timestamp leakage",
+          "answerable": true,
+          "sources": [
+            "features.md",
+            "contracts.md"
+          ],
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "abstention_correct": null
+        },
+        {
+          "query": "recall reciprocal rank retrieved chunks",
+          "answerable": true,
+          "sources": [
+            "retrieval.md"
+          ],
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "abstention_correct": null
+        },
+        {
+          "query": "freshness future timestamps",
+          "answerable": true,
+          "sources": [
+            "contracts.md"
+          ],
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "abstention_correct": null
+        },
+        {
+          "query": "volcano magma eruption",
+          "answerable": false,
+          "sources": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "abstention_correct": true
+        }
+      ]
+    },
+    {
+      "method": "bm25",
+      "k": 2,
+      "corpus_sha256": "c967a0cb63e8fef57b1ddc6845ad574d366e4cacbb28d89cc650b1eaf36613cb",
+      "case_count": 6,
+      "answerable_count": 5,
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "unanswerable_abstention_rate": 1.0,
+      "cases": [
+        {
+          "query": "idempotency key retries payment transaction",
+          "answerable": true,
+          "sources": [
+            "replay.md",
+            "replay.md"
+          ],
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "abstention_correct": null
+        },
+        {
+          "query": "columns types nullability uniqueness",
+          "answerable": true,
+          "sources": [
+            "contracts.md"
+          ],
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "abstention_correct": null
+        },
+        {
+          "query": "late arrivals prediction timestamp leakage",
+          "answerable": true,
+          "sources": [
+            "features.md",
+            "contracts.md"
+          ],
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "abstention_correct": null
+        },
+        {
+          "query": "recall reciprocal rank retrieved chunks",
+          "answerable": true,
+          "sources": [
+            "retrieval.md"
+          ],
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "abstention_correct": null
+        },
+        {
+          "query": "freshness future timestamps",
+          "answerable": true,
+          "sources": [
+            "contracts.md"
+          ],
+          "recall": 1.0,
+          "reciprocal_rank": 1.0,
+          "abstention_correct": null
+        },
+        {
+          "query": "volcano magma eruption",
+          "answerable": false,
+          "sources": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "abstention_correct": true
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "query": "idempotency payment",
+    "abstained": false,
+    "excerpts": [
+      {
+        "citation": "replay.md#1",
+        "quote": "An idempotency key identifies the same event across retries. Store the key and the resulting state change in the same transaction to avoid applying a payment twice."
+      }
+    ]
+  }
+}
